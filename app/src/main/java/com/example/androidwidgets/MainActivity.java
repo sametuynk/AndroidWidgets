@@ -20,5 +20,10 @@ public class MainActivity extends AppCompatActivity {
             Intent gecis=new Intent(MainActivity.this,ToogleSwitchActivity2.class);
             startActivity(gecis);
         });
+        binding.button2.setOnClickListener(v -> {
+            Intent gecis=new Intent(MainActivity.this,RadioCheckActivity.class);
+            startActivity(gecis);
+        });
+
     }
 }

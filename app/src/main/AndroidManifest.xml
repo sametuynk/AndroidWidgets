@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AndroidWidgets"
         tools:targetApi="31">
         <activity
+            android:name=".RadioCheckActivity"
+            android:exported="false" />
+        <activity
             android:name=".ToogleSwitchActivity2"
             android:exported="false" />
         <activity
