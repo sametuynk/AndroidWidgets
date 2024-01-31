@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
             Intent gecis=new Intent(MainActivity.this,ProgressSeekRatingBarActivity2.class);
             startActivity(gecis);
         });
+        binding.button6.setOnClickListener(v -> {
+            Intent gecis=new Intent(MainActivity.this,TimeDataPickerActivity.class);
+            startActivity(gecis);
+        });
 
     }
 }
