@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
             Intent gecis=new Intent(MainActivity.this,RadioCheckActivity.class);
             startActivity(gecis);
         });
+        binding.button3.setOnClickListener(v -> {
+            Intent gecis=new Intent(MainActivity.this,ProgressSeekRatingBarActivity2.class);
+            startActivity(gecis);
+        });
 
     }
 }
