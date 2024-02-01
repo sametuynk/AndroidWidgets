@@ -2,15 +2,17 @@ package com.example.androidwidgets;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.androidwidgets.databinding.ActivityToolbarOptionsBinding;
 
-public class ToolbarOptionsActivity extends AppCompatActivity {
+public class ToolbarOptionsActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
     private ActivityToolbarOptionsBinding binding;
 
@@ -29,6 +31,10 @@ public class ToolbarOptionsActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.toolbar,menu);
+
+        MenuItem item=menu.findItem(R.id.action_ara);
+        SearchView searchView= (SearchView) item.getActionView();
+        searchView.setOnQueryTextListener(this);
         return true;
     }
 
@@ -49,5 +55,17 @@ public class ToolbarOptionsActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        Log.e("Gönderilen Arama Sonucu",query);
+        return true;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        Log.e("Harf Girdikçe",newText);
+        return true;
     }
 }

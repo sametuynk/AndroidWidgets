@@ -3,6 +3,7 @@
     <style name="Base.Theme.AndroidWidgets" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:textColor">#3A3A3A</item>
     </style>
 
     <style name="Theme.AndroidWidgets" parent="Base.Theme.AndroidWidgets" />
