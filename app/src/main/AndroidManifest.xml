@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AndroidWidgets"
         tools:targetApi="31">
         <activity
+            android:name=".ToolbarOptionsActivity"
+            android:exported="false" />
+        <activity
             android:name=".TimeDataPickerActivity"
             android:exported="false" />
         <activity
