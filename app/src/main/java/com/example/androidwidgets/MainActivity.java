@@ -41,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
             Intent gecis=new Intent(getApplicationContext(), ListViewActivity.class);
             startActivity(gecis);
         });
+        binding.button4.setOnClickListener(v -> {
+            Intent gecis=new Intent(getApplicationContext(), VebViewActivity.class);
+            startActivity(gecis);
+        });
 
     }
 }
