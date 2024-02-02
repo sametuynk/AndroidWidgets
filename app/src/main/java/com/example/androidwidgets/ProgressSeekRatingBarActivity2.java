@@ -21,6 +21,7 @@ public class ProgressSeekRatingBarActivity2 extends AppCompatActivity {
         binding.buttonbasla.setOnClickListener(v -> {
             binding.progressBar.setVisibility(View.VISIBLE);
         });
+
         binding.buttonDur.setOnClickListener(v -> {
             binding.progressBar.setVisibility(View.INVISIBLE);
         });

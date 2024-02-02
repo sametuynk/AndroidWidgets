@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
             Intent gecis=new Intent(getApplicationContext(), ToolbarOptionsActivity.class);
             startActivity(gecis);
         });
+        binding.button7.setOnClickListener(v -> {
+            Intent gecis=new Intent(getApplicationContext(), ListViewActivity.class);
+            startActivity(gecis);
+        });
 
     }
 }

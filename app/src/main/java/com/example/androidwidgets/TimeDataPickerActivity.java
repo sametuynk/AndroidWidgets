@@ -25,9 +25,9 @@ public class TimeDataPickerActivity extends AppCompatActivity {
 
         binding.editTextSaat.setOnClickListener(v -> {
 
-            Calendar calendar=Calendar.getInstance();
-            int saat=calendar.get(Calendar.HOUR_OF_DAY);
-            int dakika=calendar.get(Calendar.MINUTE);
+            Calendar calendar = Calendar.getInstance();
+            int saat = calendar.get(Calendar.HOUR_OF_DAY);
+            int dakika = calendar.get(Calendar.MINUTE);
             TimePickerDialog timePickerDialog;
             timePickerDialog=new TimePickerDialog(TimeDataPickerActivity.this, new TimePickerDialog.OnTimeSetListener() {
                 @Override

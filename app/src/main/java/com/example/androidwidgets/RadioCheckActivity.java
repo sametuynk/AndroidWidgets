@@ -22,8 +22,14 @@ public class RadioCheckActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked){
-                    Toast.makeText(RadioCheckActivity.this, "Tebrikler :)", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RadioCheckActivity.this, "Tebrikler BJK takımını seçtiniz :)", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        binding.radioButtonGS.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                Toast.makeText(RadioCheckActivity.this, "Tebrikler GS takımını seçtiniz :)", Toast.LENGTH_SHORT).show();
             }
         });
         binding.checkBoxJava.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
