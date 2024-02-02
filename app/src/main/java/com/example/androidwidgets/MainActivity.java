@@ -28,23 +28,28 @@ public class MainActivity extends AppCompatActivity {
             Intent gecis=new Intent(MainActivity.this,ProgressSeekRatingBarActivity2.class);
             startActivity(gecis);
         });
-        binding.button6.setOnClickListener(v -> {
-            Intent gecis=new Intent(MainActivity.this,TimeDataPickerActivity.class);
+        binding.button4.setOnClickListener(v -> {
+            Intent gecis=new Intent(getApplicationContext(), VebViewActivity.class);
             startActivity(gecis);
         });
-
-        binding.button9.setOnClickListener(v -> {
-            Intent gecis=new Intent(getApplicationContext(), ToolbarOptionsActivity.class);
+        binding.button5.setOnClickListener(v -> {
+            Intent gecis=new Intent(getApplicationContext(), ImageViewActivity.class);
+            startActivity(gecis);
+        });
+        binding.button6.setOnClickListener(v -> {
+            Intent gecis=new Intent(MainActivity.this,TimeDataPickerActivity.class);
             startActivity(gecis);
         });
         binding.button7.setOnClickListener(v -> {
             Intent gecis=new Intent(getApplicationContext(), ListViewActivity.class);
             startActivity(gecis);
         });
-        binding.button4.setOnClickListener(v -> {
-            Intent gecis=new Intent(getApplicationContext(), VebViewActivity.class);
+        binding.button9.setOnClickListener(v -> {
+            Intent gecis=new Intent(getApplicationContext(), ToolbarOptionsActivity.class);
             startActivity(gecis);
         });
+
+
 
     }
 }
